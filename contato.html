@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0a0a">
+<title>Contato e como chegar | Barbearia Exemplo</title><meta name="description" content="Endereço, mapa, horários e WhatsApp da Barbearia Exemplo.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Principal">
+  <a class="nav-logo" href="index.html"><img src="assets/logo.svg" alt=""><span data-txt="nome"></span></a>
+  <div class="nav-list"><a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="sobre.html">Sobre</a><a href="contato.html" aria-current="page">Contato</a></div>
+  <a class="btn wa peq" data-wa href="contato.html">Agendar</a>
+</nav>
+<main>
+<section><div class="c"><p class="rot">Como chegar</p><h1 style="font-size:2.2rem;margin-top:.5rem" data-txt="endereco"></h1><div class="orn"><i></i></div>
+<div class="visita">
+  <div class="mapa"><iframe data-mapa title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div class="card"><h3 data-txt="endereco"></h3><p class="suave" data-txt="referencia"></p>
+    <p style="margin-top:1rem" class="ctas"><a class="btn" data-rota href="#">Traçar rota</a><a class="btn sec" data-waze href="#">Waze</a><button class="btn sec" data-copiar>Copiar endereço</button></p>
+    <span class="status" id="status"></span><ul class="horas" id="horas"></ul></div>
+</div></div></section>
+<section class="alt"><div class="c" style="max-width:560px"><p class="rot">Fale com a gente</p><h2>Mande uma mensagem</h2><div class="orn"><i></i></div>
+<form id="form-wa" class="card"><label for="nome">Seu nome</label><input id="nome" name="nome" required>
+<label for="msg">Mensagem</label><textarea id="msg" name="msg" rows="4" required>Quero agendar um horário.</textarea>
+<p style="margin-top:1rem;text-align:center"><button class="btn wa" type="submit">Enviar pelo WhatsApp</button></p></form></div></section>
+</main>
+<footer><div class="c">© <span data-ano></span> <span data-txt="nome"></span> · <span data-txt="endereco"></span></div></footer>
+<script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
